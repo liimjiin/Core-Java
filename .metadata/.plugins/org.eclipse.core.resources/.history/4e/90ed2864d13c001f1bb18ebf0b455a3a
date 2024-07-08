@@ -1,0 +1,29 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class NestedLoopDemo {
+	public static void main(String[] args) {
+		int i = 1; // 초기화
+		while(i <= 9) { // i 조건
+			int dan = 2; // dan 초기화
+			while(dan <= 9) { // dan 조건
+				System.out.print(dan + " x " + i + " = " + dan*i + "\t");
+				dan++; // dan 증감식
+			}
+			System.out.println();
+			i++;
+		}
+		
+		int j = 1;
+		int a = 65;
+		while (j <= 26){
+			while(a <= 91) {
+			System.out.print((char)(a));
+			a++;
+			}
+			System.out.println();
+			j++;
+		}
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+
+public class VariableDemo {
+	
+	int eng = 100; // instance variable 인스턴스 변수
+	static int math = 80; // class variable 클래스 변수 -> 가장 먼저 생성
+
+	public static void main(String[] args) {
+		int kor = 90; // local variable 지역변수 -> 메인이 실행 될 때
+		int kor2; // local variable 지역변수 -> 메인이 실행 될 때
+		System.out.printf("수학점수 = %d\n", math);
+		System.out.printf("국어점수 = %d\n", kor);
+		System.out.printf("국어점수2 = %d\n", kor2);
+//		System.out.printf("영어점수 = %d\n", eng); // -> 에러 : 스태틱 아니어서 못함
+
+	}
+
+}

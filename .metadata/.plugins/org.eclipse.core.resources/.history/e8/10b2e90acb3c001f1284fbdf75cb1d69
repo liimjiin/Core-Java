@@ -1,0 +1,16 @@
+
+public class For {
+
+	public static void main(String[] args) {
+		
+		for(int i = 65; i <= 90; i++) {
+			System.out.print((char)(i));
+			for(int j = 0; j <= 4; j++) {
+				System.out.println((char)(i+32));
+			}
+			
+		}
+
+	}
+
+}

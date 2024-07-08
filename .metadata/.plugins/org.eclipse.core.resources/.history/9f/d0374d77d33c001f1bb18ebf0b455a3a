@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class DoDemo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("몇 : ");
+		int su = sc.nextInt();
+		int answer = su;
+		for(; true ;) {
+			answer = answer
+		}
+	}
+
+}

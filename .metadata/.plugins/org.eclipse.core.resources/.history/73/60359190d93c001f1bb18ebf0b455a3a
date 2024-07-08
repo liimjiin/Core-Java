@@ -1,0 +1,10 @@
+
+public class StudyMgmt {
+	
+	// 학생 클래스를 사용
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

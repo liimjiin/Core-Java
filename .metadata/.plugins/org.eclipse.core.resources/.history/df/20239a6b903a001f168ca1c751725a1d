@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ConditionDemo {
+
+	public static void main(String[] args) {
+		System.out.print("Favorite Season (spring, summer, fall, winter) : ");
+		Scanner sc = new Scanner(System.in);
+		String season = sc.nextLine(); // 문자열은 값이 아니라 번지(주소)다. 
+		
+//		if(season == "spring") { // season (번지) == "spring" (값) -> 에러!
+		if(season.equals("spring")) { // equals는 String class의 멤버 메소드이기 때문에 주소가 필요하다.
+			System.out.println("개나리, 진달래");
+		}else if(season.equals("summer")) {
+			System.out.println("장마");
+		}else if(season.compareTo("fall")==0) {
+			System.out.println("코스모스");
+		}else{
+			System.out.println("매화");
+		}
+		
+
+	}
+
+}

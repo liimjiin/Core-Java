@@ -1,0 +1,8 @@
+
+public class ScoreMgmt {
+	public static void main(String[] args) {
+		Student [] array = new Student[2];
+		
+	}
+
+}
