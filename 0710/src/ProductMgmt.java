@@ -5,14 +5,9 @@ public class ProductMgmt {
 	public static void main(String[] args) throws IOException {
 		Product [] pArray = new Product[7];
 		
-		
-		
-		new ProductInput();
-		
-//		ProductMgmt pm = new ProductMgmt();
-//		Product p = new Product();
-//		
-//		new ProductCalc().calc(p);
+		new ProductInput().input(pArray);
+		new ProductCalc().calc(pArray);
+		new ProductOutput().output(pArray);
 		
 		
 	}
