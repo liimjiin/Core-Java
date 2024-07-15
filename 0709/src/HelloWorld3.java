@@ -8,5 +8,5 @@ public class HelloWorld3 {
 	}
 }
 class Demo2{
-	static String str = "아오 졸려"; // class, static variable
+	static String str = "Hello, World"; // class, static variable
 }

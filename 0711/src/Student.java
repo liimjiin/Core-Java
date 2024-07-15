@@ -13,6 +13,13 @@ public class Student {
 	private double avg;
 	private char grade;
 	
+	
+	@Override
+	public String toString() {
+		return String.format("Student [id=%s, name=%s, kor=%s, eng=%s, mat=%s, edp=%s, tot=%s, avg=%s, grade=%s]", id,
+				name, kor, eng, mat, edp, tot, avg, grade);
+	}
+
 	public Student(String id, String name, int kor, int eng, int mat, int edp) {
 		this.id = id;
 		this.name = name;

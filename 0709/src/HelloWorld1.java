@@ -8,10 +8,7 @@ public class HelloWorld1 {
 	public static void main(String[] args) {
 		String str1 = "Hello, World"; // local, stack, temporary, auto variable -> 지역변수 : 초기화 필요, 사용 후 알아서 소멸
 		System.out.println(str2); 
-		System.out.println(Demo.str); 
 	}
 
 }
-class Demo{
-	static String str = "아오 졸려"; // class, static variable
-}
+
