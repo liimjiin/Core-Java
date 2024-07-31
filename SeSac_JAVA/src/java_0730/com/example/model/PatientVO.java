@@ -1,14 +1,15 @@
 package java_0730.com.example.model;
 
+// 데이터 전송을 위한 객체를 단순 저장, DB에서 읽어온 데이터를 저장, 화면에서 입력받은 데이터를 저장
 public class PatientVO {
-    private int number;    //환자번호
-    private String code;    //진료코드
-    private int days;        //입원일수
-    private int age;         //나이
-    private String dept;   //진찰부서
-    private int operFee;  //진찰비
-    private int hospitalFee;   //입원비
-    private int money;   //진료비
+    private int number;    // 환자번호
+    private String code;    // 진료코드
+    private int days;        // 입원일수
+    private int age;         // 나이
+    private String dept;   // 진찰부서
+    private int operFee;  // 진찰비
+    private int hospitalFee;   // 입원비
+    private int money;   // 진료비
 
     public PatientVO() {
     }

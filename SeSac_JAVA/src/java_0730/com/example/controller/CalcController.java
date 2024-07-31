@@ -24,7 +24,7 @@ public class CalcController {
 
     private String getDept(String code) {
         String dept = null;
-        switch (code) {
+        switch (code.toUpperCase()) {
             case "MI":
                 dept = "외과";
                 break;

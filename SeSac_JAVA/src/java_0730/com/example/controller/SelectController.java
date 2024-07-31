@@ -22,4 +22,10 @@ public class SelectController {
         }
         return list;
     }
+
+    public PatientVO selectPatient(int number) throws SQLException {
+        PatientVO p = null;
+        p = this.pDao.readPatient(number);
+        return p;
+    }
 }

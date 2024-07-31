@@ -9,3 +9,26 @@ CREATE TABLE patient(
 	money		INT,
 	CONSTRAINT patient_pk PRIMARY KEY(number)
 	);
+-----------------------------------------
+
+DELIMITER $$
+CREATE PROCEDURE sp_select_all_patient()
+BEGIN
+	 SELECT number, dept, operfee, hospitalfee, money
+     FROM patient
+     ORDER BY number DESC;
+END $$
+DELIMITER ;
+
+--------------------------------------------
+DELIMITER //
+CREATE PROCEDURE cp_select_one_patient
+(
+	IN v_number TINYINT
+)
+BEGIN
+	SELECT *
+    FROM patient
+    WHERE number = v_number;
+END //
+DELIMITER ;
